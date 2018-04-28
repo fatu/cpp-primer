@@ -3,7 +3,6 @@
 //
 
 #include <vector>
-#include "Sales_item.h"
 #include <iostream>
 
 using std::string;
@@ -13,9 +12,6 @@ using std::endl;
 using std::cin;
 
 int main() {
-    vector<int> ivec;
-    vector<Sales_item> Sales_vec;
-    vector<vector<string>> file;
 
     string word;
     vector<string> text;
@@ -36,5 +32,9 @@ int main() {
 
     for (auto i : scores)
         cout << i << " ";
+
+    vector<int> ivec;
+    for (decltype(ivec.size()) ix = 0; ix != 10; ++ix)
+        ivec.push_back(ix);
 
 }
