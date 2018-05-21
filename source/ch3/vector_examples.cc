@@ -25,16 +25,20 @@ int main() {
 
     vector<unsigned> scores(11, 0);
     unsigned grade;
-    while (cin >> grade) {
-        if (grade <= 100)
-            ++scores[grade / 10];
-    }
+//    while (cin >> grade) {
+//        if (grade <= 100)
+//            ++scores[grade / 10];
+//    }
 
-    for (auto i : scores)
-        cout << i << " ";
+//    for (auto i : scores)
+//        cout << i << " ";
 
     vector<int> ivec;
     for (decltype(ivec.size()) ix = 0; ix != 10; ++ix)
         ivec.push_back(ix);
 
+    auto pbeg = v.begin();
+    // print elements up to the first negative value
+    while (pbeg != v.end() && *pbeg >= 0)
+        cout << *++pbeg << endl;
 }
