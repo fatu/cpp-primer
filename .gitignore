@@ -45,5 +45,13 @@ compile_commands.json
 CTestTestfile.cmake
 build
 cmake-build-debug/
-
 # End of https://www.gitignore.io/api/c++,clion,cmake~
+
+# Created by https://www.gitignore.io/api/bazel
+
+### Bazel ###
+/bazel-*
+.project
+
+# End of https://www.gitignore.io/api/bazel
+
